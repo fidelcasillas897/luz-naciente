@@ -12,7 +12,9 @@
         nav a { margin: 0 15px; color: white; text-decoration: none; font-weight: bold; }
         section { padding: 20px; max-width: 900px; margin: auto; }
         footer { background-color: #dfcbb5; text-align: center; padding: 10px; margin-top: 30px; }
-        .gallery img { width: 200px; margin: 10px; border-radius: 8px; box-shadow: 0 0 5px rgba(0,0,0,0.3); }
+        .gallery { display: flex; flex-wrap: wrap; justify-content: space-around; }
+        .product { margin: 10px; text-align: center; }
+        .product img { width: 200px; border-radius: 8px; box-shadow: 0 0 5px rgba(0,0,0,0.3); cursor: pointer; }
         .cta-button { background-color: #8b5e3c; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 20px; }
         h2 { border-bottom: 2px solid #c2a17b; padding-bottom: 5px; }
         ul li { margin-bottom: 10px; }
@@ -23,7 +25,7 @@
 <header>
     <img src="LOGOTIPO.jpg" alt="Luz Naciente">
     <h1>Luz Naciente 🌿</h1>
-    <p>Velas, Jabones y Productos Artesanales ✨</p>
+    <p>Velas, Jabones y Bienestar Artesanal ✨</p>
 </header>
 
 <nav>
@@ -42,53 +44,37 @@
     <a class="cta-button" href="#compras">¡Compra Ahora!</a>
 </section>
 
-<section id="nosotros">
-    <h2>Sobre Nosotros 🌿</h2>
-    <p>Somos Luz Naciente, un taller artesanal dedicado a crear productos que despiertan los sentidos y sanan el alma. Creemos en el poder de la naturaleza, el autocuidado y los pequeños rituales cotidianos que traen equilibrio y bienestar.</p>
-</section>
-
 <section id="catalogo">
     <h2>Catálogo de Productos 🛍️</h2>
+
+    <h3>Velas Aromáticas</h3>
     <div class="gallery">
-        <img src="494222020_122099097314924997_8907209528106321010_n.jpg" alt="Jabón Carbón Activado">
-        <p><strong>Jabón Carbón Activado</strong> - Limpieza profunda y natural. $80 MXN</p>
-        <img src="497869806_122096919482924997_6794940056673726526_n.jpg" alt="Vela Blanca Luz Naciente">
-        <p><strong>Vela Blanca Luz Naciente</strong> - Paz y armonía. $150 MXN</p>
-        <img src="502638623_122096919278924997_4400529148413673309_n.jpg" alt="Vela Aura de Paz">
-        <p><strong>Vela Aura de Paz</strong> - Aromaterapia relajante. $180 MXN</p>
-        <img src="506741684_122096919668924997_2123012974396078981_n.jpg" alt="Vela Eclipse">
-        <p><strong>Vela Eclipse</strong> - Misterio y equilibrio. $180 MXN</p>
-        <img src="510365861_122095879472924997_5764887458182778470_n.jpg" alt="Jabones Artesanales Variados">
-        <p><strong>Set de Jabones Variados</strong> - Regalo perfecto. $200 MXN</p>
-        <img src="WhatsApp Image 2025-06-27 at 1.46.35 AM (1).jpeg" alt="Vela Premium Artesanal">
-        <p><strong>Vela Premium Artesanal</strong> - Edición especial. $250 MXN</p>
-        <img src="WhatsApp Image 2025-06-27 at 1.46.35 AM (2).jpeg" alt="Vela Premium Artesanal">
-        <p><strong>Vela Premium Artesanal</strong> - Edición especial. $250 MXN</p>
-        <img src="WhatsApp Image 2025-06-27 at 1.46.35 AM (3).jpeg" alt="Vela Premium Artesanal">
-        <p><strong>Vela Premium Artesanal</strong> - Edición especial. $250 MXN</p>
-        <img src="WhatsApp Image 2025-06-27 at 2.03.35 AM.jpeg" alt="Vela Premium Artesanal">
-        <p><strong>Vela Premium Artesanal</strong> - Edición especial. $250 MXN</p>
+        <div class="product">
+            <img src="Magia otoñal.jpeg" alt="Magia otoñal" onclick="window.open('https://www.paypal.me/tuusuario/250')">
+            <p><strong>Magia otoñal</strong><br>$250 grande, $150 chica, $350 kit</p>
+        </div>
+        <div class="product">
+            <img src="Brisa de Mar.jpeg" alt="Brisa de Mar" onclick="window.open('https://www.paypal.me/tuusuario/250')">
+            <p><strong>Brisa de Mar</strong><br>$250 grande, $150 chica, $350 kit</p>
+        </div>
+        <div class="product">
+            <img src="Matcha.jpeg" alt="Matcha" onclick="window.open('https://www.paypal.me/tuusuario/250')">
+            <p><strong>Matcha</strong><br>$250 grande, $150 chica, $350 kit</p>
+        </div>
     </div>
-</section>
 
-<section id="recetas">
-    <h2>Recetario Artesanal 🍯</h2>
-    <p>¿Quieres aprender a hacer tus propios productos naturales? Aquí te compartimos recetas sencillas y seguras para elaborar jabones y velas en casa. Ideal para autocuidado o regalos llenos de intención.</p>
-</section>
-
-<section id="blog">
-    <h2>Blog de Bienestar y Aromaterapia 🌸</h2>
-    <ul>
-        <li><strong>¿Por qué las velas pueden ser tan poderosas emocionalmente?</strong><br>Las velas activan nuestros sentidos y emociones. Descubre su poder simbólico y cómo transforman un espacio en refugio.</li>
-        <li><strong>Luz para la mente: Cómo las velas ayudan a relajarte</strong><br>El parpadeo de una vela reduce el estrés y conecta con tu calma interior. Aprende a crear tu momento de paz.</li>
-        <li><strong>Los aromas y su impacto en tus emociones</strong><br>Aromas naturales como lavanda, cítricos y resinas son aliados de tus emociones. Conoce cuál es ideal para ti.</li>
-        <li><strong>Aromaterapia: Las velas también sanan</strong><br>No es solo un aroma: es una terapia emocional y mental. Nuestras velas son bienestar en cada encendido.</li>
-    </ul>
+    <h3>Jabones Artesanales</h3>
+    <div class="gallery">
+        <div class="product">
+            <img src="Paquete 2 jabones de carbón activado con aloe vera y coco chanel con leche de cabra.jpeg" alt="Paquete jabones" onclick="window.open('https://www.paypal.me/tuusuario/125')">
+            <p><strong>Paquete 2 jabones carbón activado</strong><br>Con aloe vera y coco chanel. $125 MXN</p>
+        </div>
+    </div>
 </section>
 
 <section id="compras">
     <h2>Compra Fácil y Seguro 💳</h2>
-    <p>Adquiere nuestros productos desde cualquier parte de México. Envía tu pedido por WhatsApp y realiza el pago por transferencia o depósito. 💌</p>
+    <p>Haz clic sobre el producto que deseas y te llevaremos directo a pagar por PayPal. También puedes contactarnos para pedidos especiales. 💌</p>
     <a class="cta-button" href="https://wa.me/528124382947">Comprar por WhatsApp</a>
 </section>
 
